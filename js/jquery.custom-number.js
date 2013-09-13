@@ -25,7 +25,8 @@
 
       var c = this.prefix('wrap') + ' ' + this.$el.attr('class').split(this.settings.class_prefix).join('');
       this.$wrap = $('<span class="' + c + '" />')
-      this.$el.wrap(this.$wrap);
+
+      this.$el.addClass(this.settings.class_prefix).wrap(this.$wrap);
 
       this.$up = $('<span class="' + this.prefix('up') + '"><i></i></span>');
       this.$down = $('<span class="' + this.prefix('down') + '"><i></i></span>');
