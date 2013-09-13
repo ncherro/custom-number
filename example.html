@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>jQuery Custom Number example</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .input {
+      width: 80px;
+      position: relative;
+    }
+    .input.large {
+      width: 300px;
+    }
+
+    input.custom-number {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      height: 40px;
+      padding: 0 40px 0 10px;
+      border: none;
+      background: #666;
+      color: #fff;
+    }
+
+    input.fancy-number {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      height: 40px;
+      padding: 0 40px 0 10px;
+      border: none;
+      background: #666;
+      color: #fff;
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/custom-number.css">
+</head>
+<body>
+  <p>Hello world!</p>
+
+  <form action="">
+
+    <div class="input">
+      <input type="number" class="custom-number" value="8" />
+    </div>
+
+    <div class="input large">
+      <input type="number" class="custom-number" value="9" />
+    </div>
+
+  </form>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.custom-number.js"></script>
+  <script>
+    $('.custom-number').customNumber();
+    $('.fancy-number').customNumber();
+  </script>
+</body>
+</html>
